@@ -1,6 +1,66 @@
 @charset "UTF-8";
 
-body {
-    background-color: aqua;
-    font-family: Arial, Helvetica, sans-serif;
+
+/* Paleta de cores
+Aqua , Brow */
+
+
+/*Todas as outras Medias*/
+
+
+/* Typical Device Breakpoints  
+Pequenas Telas : Até 600px 
+Celular : De 600px Até 768px
+Tablets : De 768px Até 992px
+Desktop : De 992px Até 1200px
+Grandes Telas : Acima de 1200px  
+*/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color:aqua;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: brown;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px black;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+section#login > div#imagem {
+    display: block;
+    background: aqua url(../imagens/20190610_124412.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
